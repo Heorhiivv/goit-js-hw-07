@@ -26,12 +26,13 @@ newGallery.style.justifyContent = "space-between";
 
 
 images.map((imgEl, i) => {
-  newGallery.insertAdjacentHTML("beforeend", "<li> <img> </li>");
+  newGallery.insertAdjacentHTML("beforeend", "<li> <img src = '${url}' alt ='${alt}' height = 210> </li>");
   let img = newGallery.querySelectorAll('img');
   let imgTagUrl = imgEl.url;
   let ImgTagAlt = imgEl.alt;
   img[i].setAttribute('src', imgTagUrl);
   img[i].setAttribute('alt', ImgTagAlt);
-  img[i].style.height = '210px'
 })
+
+
 

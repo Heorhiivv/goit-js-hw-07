@@ -6,12 +6,16 @@ let counterValue = document.querySelector("#value")
 
 let value = 0;
 
-decrementBtn.addEventListener("click", handleDecrement)
-incrementBtn.addEventListener("click", handleIncrement)
-
 function handleIncrement () {
-  counterValue.textContent = value += 1
+  // counterValue.textContent = value += 1
+value +=1
+counterValue.textContent = value;
 }
 function handleDecrement () {
-  counterValue.textContent = value -= 1
+  // counterValue.textContent = value -= 1
+value -=1
+counterValue.textContent = value;
 }
+
+decrementBtn.addEventListener("click", handleDecrement)
+incrementBtn.addEventListener("click", handleIncrement)
